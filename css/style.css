@@ -1,0 +1,178 @@
+@import "null.css";
+
+
+body{
+	height: 5000px;
+	text-align: center;
+	position: relative;
+}
+
+.wrapper {
+	background-color: bisque;
+	height: 5000px;
+}
+.header {
+
+}
+.header__fixed{
+	font-size: 25px;
+	background-color: cadetblue;
+	padding: 20px;
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	z-index: 50;
+
+}
+.main {
+	padding: 30px;
+}
+.main__example {
+	color: aliceblue;
+	font-size: 25px;
+
+}
+.example-block:not(:last-child) {
+	margin-bottom: 200px;
+	width: 100%;
+}
+.example-block{
+	width: 1180px;
+	margin: 0 auto;
+	margin-top: 150px;
+	position: relative;
+	
+}
+
+.example-block__one {
+	background-color: #935a50;
+	padding: 20px;
+	position: relative;
+	z-index: 2;
+}
+.example-block__two {
+	background-color: #5e5373;
+	padding: 20px;
+	position: relative;
+	bottom: 30px;
+	right: 50px;
+	z-index: 1;
+}
+.example-block__tree {
+	background-color: #18b5a4;
+	padding: 20px;
+	position: relative;
+	top: -45px;
+	left: 150px;
+	z-index: 0;
+}
+.example-block__four {
+	padding: 20px;
+	background-color: #ea5275;
+	position: absolute;
+	z-index: 3;
+	top: 5px;
+	left: 15px;
+	
+}
+.example-block__five {
+	background-color: #6dd8a5;
+	padding: 20px;
+	position: sticky;
+	z-index: 51;
+}
+.example-block__six {
+	background-color: #74a07d;
+	padding: 20px;
+}
+.example-block__seven {
+	background-color: #ed6862;
+	padding: 20px;
+}
+.example-block__eight {
+	background-color: #396ec3;
+	padding: 20px;
+}
+.example-block__nine {
+	background-color: #11b7e4;
+	padding: 20px;
+	position: sticky;
+	z-index: 51;
+}
+.example-block__ten {
+	background-color: #321c5f;
+	padding: 20px;
+	position: absolute;
+	right: 10px;
+	top: 0;
+	z-index: 10;
+}
+.example-block__eleven {
+	background-color: #1d2733;
+	padding: 20px;
+	position: sticky;
+	z-index: 51;
+}
+.example-block__twelve {
+	background-color: #b0c369;
+	padding: 20px;
+}
+
+
+/* Список */
+
+.list{
+	font-size: 30px;
+	text-align: left;
+	padding: 30px;
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 120px;
+}
+.list__article:not(:last-child) {
+	margin: 0 0 20px 0;
+}
+.list__article{
+	position: relative;
+	padding: 0 0 0 35px;
+}
+.list__article::before{
+   content: "";
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background-color: #1d2733;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+/* Картинка */
+
+.image{
+	background-color: #fff;
+	position: relative;
+	display: inline-block;
+
+}
+.image::before{
+	content: "";
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+}
+.image:hover::before{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.image:visited::before{
+	background-color: rgba(150, 100, 200, 0.5);
+}
+
+
+
